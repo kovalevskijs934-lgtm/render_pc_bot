@@ -7,7 +7,7 @@ import time
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Импортируем новую версию для Render
-import pc_client_render as pc_client
+import pc_client as pc_client
 
 app = Flask(__name__)
 bot_running = False
@@ -38,4 +38,5 @@ threading.Thread(target=run_bot, daemon=True).start()
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
+
     app.run(host="0.0.0.0", port=port, debug=False)
