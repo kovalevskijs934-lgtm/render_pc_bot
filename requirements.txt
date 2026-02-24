@@ -1,5 +1,0 @@
-pytelegrambotapi
-Flask
-psutil
-pyautogui
-pillow
